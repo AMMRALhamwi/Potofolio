@@ -11,7 +11,18 @@
 }
 body {
   background-color: var(--main-color);
+  font-family: "Roboto", serif;
 }
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+:focus {
+  outline: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -111,110 +122,22 @@ nav {
   color: var(--red-color);
 }
 /* end side-nav  */
-/* start intro */
-.card {
-  border: none;
-  margin-top: -83px;
-}
-
-.intro .card .image {
-  width: 200px;
-  height: 200px;
-  background-color: transparent;
-}
-@media (max-width: 576px) {
-  .intro .card .image {
-    width: 150px;
-    height: 150px;
-  }
-}
-.intro .card .image img {
-  border: 15px solid var(--secondary-color);
-  top: 70%;
-}
-
-.intro .card .card-body {
-  background-color: var(--secondary-color);
-}
-.intro .card .card-body {
-  letter-spacing: 1px;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-}
-.intro .card .card-body p {
-  color: var(--text-color);
-  line-height: 1.8;
-  font-size: 20px;
-}
-@media (max-width: 576px) {
-  .intro .card .card-body p {
-    line-height: 1.6;
-    font-size: 18px;
-  }
-}
-.intro .card .card-body p a {
-  color: #6ba5ec;
-}
-/* end intro */
-/* start projects */
-.projects .container {
-  background-color: var(--secondary-color);
-  border-radius: 8px;
-}
-.projects .container .card-group .card {
+/* start projects cards */
+.projects .card {
   background-color: var(--secondary-color);
   color: var(--white-color);
 }
-.projects .container .card-group .card .image {
-  height: 430px;
-  padding: 10px;
+.projects .card .card-text {
+  color: var(--text-color);
+  text-transform: capitalize;
 }
-.projects .container .card-group .card img {
-  max-height: 100%;
+.projects .card .card-body {
+  height: 166px;
 }
-@media (max-width: 576px) {
-  .projects .container .card-group .card .special-button {
-    margin-bottom: 56px;
-  }
-}
-
-/* end projects */
-/* start skills */
-.skills .container {
-  background-color: var(--secondary-color);
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-}
-.skills-icons {
-  font-size: 150px;
-  flex-wrap: wrap;
-  gap: 50px 150px;
-}
-@media (max-width: 576px) {
-  .skills-icons {
-    font-size: 75px;
-    gap: 25px 25px;
-  }
-}
-/* start skills */
-/* start footer */
-footer .nav-item {
-  width: 192px;
-}
-@media (max-width: 600px) {
-  footer .nav-item {
-    width: 150px;
-    margin-bottom: 20px;
-  }
-}
-footer .nav-item .nav-link {
+.projects .card .image {
   width: 50px;
-  height: 50px;
 }
-/* end footer */
+.projects .card .image img {
+  width: 634px;
+}
+/* end projects cards */
